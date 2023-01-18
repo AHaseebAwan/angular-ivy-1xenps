@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<br />
+<select [formControl]="select">
+  <option>Option A</option>
+  <option>Option B</option>
+  <option>Option C</option>
+</select>
+<br />
+<div *ngIf="selectedOption$ | async as selectedOption">
+  Selected Value: {{ selectedOption }}
+</div>
